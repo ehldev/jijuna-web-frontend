@@ -1,7 +1,7 @@
 <template>
   <section class="app-gallery mx-auto mt-10 pb-12">
     <div class="container mx-auto px-0 md:px-4">
-      <h2 class="text-center mb-6 md:mb-0">Galería</h2>
+      <h2 class="page-subtitle text-center mb-6 md:mb-0">Galería</h2>
 
       <CoolLightBox :items="images" :index="index" @close="index = null">
       </CoolLightBox>
@@ -75,11 +75,4 @@ export default {
 </script>
 
 <style lang="postcss">
-.app-gallery h2 {
-  font-size: 42px;
-
-  @media (min-width: 768px) {
-    font-size: 64px;
-  }
-}
 </style>
