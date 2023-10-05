@@ -1,0 +1,146 @@
+[
+  {
+    "selected": true,
+    "name": "Hamburguesas",
+    "items": [
+      {
+        "selected": false,
+        "name": "La clásica",
+        "description": "La combinación perfecta de hot dog Frankfurter y papas fritas doradas, todo en un solo plato para remomrar el sabor tracicional.",
+        "price": 17
+      },
+      {
+        "selected": false,
+        "name": "Pollipapas",
+        "description": "Hot dog Frankfurter, papas fritas doradas y un delicioso filete de pollo trozado con todas las cremas",
+        "price": 22
+      },
+      {
+        "selected": false,
+        "name": "La Montada",
+        "description": "Salchipapa tradicional llevada al siguiente nivel con un huevo frito encima para que ...",
+        "price": 17
+      },
+      {
+        "selected": false,
+        "name": "Especial de pollo",
+        "description": "Papas fritas crujientes, Hot dog Frankfurter arrebozado con huevo y trozos de una suculenta hamburguesa de pollo.",
+        "price": 17
+      },
+      {
+        "selected": false,
+        "name": "La Greñuda",
+        "description": "Hot dog Frankfurter, papas fritas doradas y como protagonista, nuestro pollo deshilachado suave y sabroso.",
+        "price": 17
+      },
+      {
+        "selected": false,
+        "name": "Especial de carne",
+        "description": "Papas fritas crujientes, Hot dog Frankfurter arrebozado con huevo y trozos de una suculenta hamburguesa de carne.",
+        "price": 17
+      },
+      {
+        "selected": false,
+        "name": "La Chori",
+        "description": "Hot dog Frankfurter, papas fritas doradas y la potencia saborizada del chorizo xxxxxxx",
+        "price": 17
+      }
+    ]
+  },
+  {
+    "selected": false,
+    "name": "Salchipapas",
+    "items": [
+      {
+        "selected": false,
+        "name": "Pollipapas",
+        "description": "Hot dog Frankfurter, papas fritas doradas y un delicioso filete de pollo trozado con todas las cremas",
+        "price": 22
+      },
+      {
+        "selected": false,
+        "name": "La Montada",
+        "description": "Salchipapa tradicional llevada al siguiente nivel con un huevo frito encima para que ...",
+        "price": 17
+      },
+      {
+        "selected": false,
+        "name": "La clásica",
+        "description": "La combinación perfecta de hot dog Frankfurter y papas fritas doradas, todo en un solo plato para remomrar el sabor tracicional.",
+        "price": 17
+      }
+    ]
+  },
+  {
+    "selected": false,
+    "name": "Broaster",
+    "items": [
+      {
+        "selected": false,
+        "name": "La Montada",
+        "description": "Salchipapa tradicional llevada al siguiente nivel con un huevo frito encima para que ...",
+        "price": 17
+      },
+      {
+        "selected": false,
+        "name": "Pollipapas",
+        "description": "Hot dog Frankfurter, papas fritas doradas y un delicioso filete de pollo trozado con todas las cremas",
+        "price": 22
+      },
+      {
+        "selected": false,
+        "name": "La clásica",
+        "description": "La combinación perfecta de hot dog Frankfurter y papas fritas doradas, todo en un solo plato para remomrar el sabor tracicional.",
+        "price": 17
+      }
+    ]
+  },
+  {
+    "selected": false,
+    "name": "Alitas",
+    "items": [
+      {
+        "selected": false,
+        "name": "La Montada",
+        "description": "Salchipapa tradicional llevada al siguiente nivel con un huevo frito encima para que ...",
+        "price": 17
+      },
+      {
+        "selected": false,
+        "name": "La clásica",
+        "description": "La combinación perfecta de hot dog Frankfurter y papas fritas doradas, todo en un solo plato para remomrar el sabor tracicional.",
+        "price": 17
+      },
+      {
+        "selected": false,
+        "name": "Pollipapas",
+        "description": "Hot dog Frankfurter, papas fritas doradas y un delicioso filete de pollo trozado con todas las cremas",
+        "price": 22
+      }
+    ]
+  },
+  {
+    "selected": false,
+    "name": "BEBIDAS",
+    "items": [
+      {
+        "selected": false,
+        "name": "Especial de carne",
+        "description": "Papas fritas crujientes, Hot dog Frankfurter arrebozado con huevo y trozos de una suculenta hamburguesa de carne.",
+        "price": 17
+      },
+      {
+        "selected": false,
+        "name": "La clásica",
+        "description": "La combinación perfecta de hot dog Frankfurter y papas fritas doradas, todo en un solo plato para remomrar el sabor tracicional.",
+        "price": 17
+      },
+      {
+        "selected": false,
+        "name": "Pollipapas",
+        "description": "Hot dog Frankfurter, papas fritas doradas y un delicioso filete de pollo trozado con todas las cremas",
+        "price": 22
+      }
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'GothamFont';
+  src: url('~assets/fonts/Gotham-Font/GothamMedium.ttf'),
+       url('~assets/fonts/Gotham-Font/GothamLight.ttf'),
+       url('~assets/fonts/Gotham-Font/GothamBold.ttf');
+  /* Puedes agregar más formatos de fuente si es necesario */
+  font-weight: normal;
+  font-style: normal;
+}
