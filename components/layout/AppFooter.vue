@@ -1,14 +1,17 @@
 <template>
-  <footer class="main-bg">
+  <footer id="footer" class="main-bg">
     <div class="container mx-auto py-6 lg:flex">
       <section class="info-container lg:w-2/5">
-        <div class="text-white text-xs md:text-sm">
+        <div
+          class="text-white text-xs md:text-sm font-light"
+          data-aos="fade-in"
+        >
           <img src="@/assets/images/logo-jijuna.svg" alt="Logo Jijuna" />
 
           <p class="mt-4">
             ¡Tu antojo de comida rápida satisfecho en un click! Bienvenido a
-            JIJUNA, el rincón donde las Salchipapas, Hamburguesas, Alitas y el
-            Broaster se convierten en protagonistas de tu paladar.
+            <span class="font-bold">JIJUNA</span>, el rincón donde las <span class="font-bold">Salchipapas, Hamburguesas, Alitas</span> y el
+            <span class="font-bold">Broaster</span> se convierten en protagonistas de tu paladar.
           </p>
 
           <p class="mt-3">
@@ -43,14 +46,14 @@
                 class="mr-2"
               />
               <nuxt-link
-                to="/"
+                to="/terminos-y-condiciones"
                 target="_blank"
                 class="text-white hover:text-jijuna-primary text-base"
                 >Términos y condiciones</nuxt-link
               >
             </li>
 
-            <li class="flex mt-3">
+            <!-- <li class="flex mt-3">
               <img
                 src="@/assets/images/footer/email.svg"
                 alt="Mapa de sitio Jijuna"
@@ -62,9 +65,9 @@
                 class="text-white hover:text-jijuna-primary text-base"
                 >Mapa de sitio</nuxt-link
               >
-            </li>
+            </li> -->
 
-            <li class="flex mt-3">
+            <!-- <li class="flex mt-3">
               <img
                 src="@/assets/images/footer/book.svg"
                 alt="Libro de reclamaciones Jijuna"
@@ -76,23 +79,23 @@
                 class="text-white hover:text-jijuna-primary text-base"
                 >Libro de reclamaciones</nuxt-link
               >
-            </li>
+            </li> -->
           </ul>
         </div>
       </section>
 
-      <div class="md:flex md:justify-between md:flex-1 md:mt-6">
-        <section class="lg:pl-14">
+      <div class="md:flex md:justify-around md:flex-1 md:mt-6">
+        <section>
           <h3 class="footer-title">Cobertura - Delivery</h3>
 
-          <ul class="text-white list-disc mt-6 pl-4">
+          <ul class="text-white list-disc mt-6 pl-4" data-aos="fade-in">
             <li v-for="item in districts" :key="item" class="mb-1">
               {{ item }}
             </li>
           </ul>
         </section>
 
-        <section>
+        <section data-aos="fade-in">
           <h3 class="footer-title">Contáctanos</h3>
 
           <div class="mt-4">
@@ -167,20 +170,26 @@
               <h4 class="text-white text-lg">Síguenos</h4>
 
               <div class="flex mt-3">
-                <img
-                  src="@/assets/images/footer/facebook.svg"
-                  alt="Yape Jijuna"
-                  class="mr-3"
-                />
-                <img
-                  src="@/assets/images/footer/instagram.svg"
-                  alt="Plin Jijuna"
-                  class="mr-3"
-                />
-                <img
-                  src="@/assets/images/footer/tiktok.svg"
-                  alt="Yape Jijuna"
-                />
+                <a href="https://web.facebook.com/jijunaperu" target="_blank">
+                  <img
+                    src="@/assets/images/footer/facebook.svg"
+                    alt="Facebook Jijuna"
+                    class="mr-3"
+                  />
+                </a>
+                <a href="https://www.instagram.com/jijuna.pe/" target="_blank">
+                  <img
+                    src="@/assets/images/footer/instagram.svg"
+                    alt="Plin Jijuna"
+                    class="mr-3"
+                  />
+                </a>
+                <a href="https://www.tiktok.com/@jijuna.pe" target="_blank">
+                  <img
+                    src="@/assets/images/footer/tiktok.svg"
+                    alt="Tiktok Jijuna"
+                  />
+                </a>
               </div>
             </div>
           </div>

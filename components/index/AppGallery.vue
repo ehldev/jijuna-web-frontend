@@ -1,6 +1,6 @@
 <template>
   <section class="app-gallery mx-auto mt-10 pb-12">
-    <div class="container mx-auto px-0 md:px-4">
+    <div class="app-gallery-container mx-auto px-0">
       <h2 class="page-subtitle text-center mb-6 md:mb-0">Galería</h2>
 
       <CoolLightBox :items="images" :index="index" @close="index = null">
@@ -21,13 +21,15 @@
 
       <!-- Desktop -->
       <div
-        class="hidden md:grid md:grid-cols-4 md:gap-4 md:2xl:max-app-gallery md:pt-4 md:pb-12w-7xl lg:mx-auto"
+        class="hidden md:grid md:grid-cols-5 md:gap-2 md:2xl:max-app-gallery md:pt-4 md:pb-12w-7xl lg:mx-auto"
       >
         <div
           class="cursor-pointer"
           v-for="(image, i) in images"
           :key="index"
           @click="index = i"
+          data-aos="fade-in"
+          :data-aos-delay="100 * (i + 1)"
         >
           <img :src="image" alt="" />
         </div>
@@ -48,6 +50,7 @@ export default {
         "https://res.cloudinary.com/ehldev/image/upload/v1696486372/dlmdeygg8truow9itbku.png",
         "https://res.cloudinary.com/ehldev/image/upload/v1696486373/yaeb30te2kxmqjgwnerp.png",
         "https://res.cloudinary.com/ehldev/image/upload/v1696486372/stt9krx7wjvy6g47kszc.png",
+        "https://res.cloudinary.com/ehldev/image/upload/v1696486372/fhqbuepwzdxikllmq850.png"
       ],
       index: null,
       swiperOptions: {
@@ -75,4 +78,7 @@ export default {
 </script>
 
 <style lang="postcss">
+.app-gallery-container {
+  max-width: 1440px;
+}
 </style>

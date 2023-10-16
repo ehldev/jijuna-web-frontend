@@ -35,7 +35,10 @@ module.exports = {
         'app-light': '#f8f9fa',
         'app-gray-light': '#f8f8f8',
         'jijuna-primary': JIJUNA_PRIMARY,
-        'jijuna-black': '#161616'
+        'jijuna-black': '#161616',
+        'jijuna-gray': '#413F3F',
+        'jijuna-gray-light': '#AEABAB',
+        'jijuna-gray-medium': '#E5E5E5'
       },
       backgroundColor: {
         'jijuna-primary-30': `rgba(255, 170, 0, 0.05)`

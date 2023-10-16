@@ -6,21 +6,31 @@
         <div
           class="card-header w-1/2 md:w-full bg-jijuna-primary flex flex-col justify-center"
         >
-          <span class="card-subtitle uppercase mb-2 md:mb-5"
+          <span
+            class="card-subtitle uppercase mb-2 md:mb-5"
+            data-aos="fade-in"
             >OFERTA DEL DÍA</span
           >
 
           <div class="flex flex-col md:flex-row justify-center items-center">
             <div
               class="text-right border-b md:border-b-0 md:border-r border-jijuna-black md:pr-6 pb-2"
+              data-aos="fade-in"
+
             >
-              <h3 class="card-title card-title-first font-normal">
+              <h3
+                class="card-title card-title-first font-normal animate__animated animate__fadeIn"
+              >
                 Salchipapa
               </h3>
               <h3 class="card-title font-bold">La Clásica</h3>
             </div>
 
-            <div class="flex pl-6 pt-2 md:pt-0">
+            <div
+              class="flex md:pl-3 lg:pl-6 pt-2 md:pt-0"
+              data-aos="fade-in"
+              data-aos-delay="200"
+            >
               <h3 class="discount-value font-bold">25</h3>
               <h3 class="card-title discount flex flex-col font-bold pl-1">
                 % <span class="discount font-normal">Dscto.</span>
@@ -28,11 +38,28 @@
             </div>
           </div>
 
-          <span class="card-subtitle mt-2 md:mt-6">Primeras 100 unidades</span>
+          <span
+            class="card-subtitle mt-2 md:mt-6"
+            data-aos="fade-in"
+
+            >Primeras 100 unidades</span
+          >
         </div>
 
-        <div class="card-image w-1/2 md:w-full">
-          <img src="@/assets/images/delivery.png" alt="" class="w-full" />
+        <div
+          class="card-image w-1/2 md:w-full"
+          data-aos="fade-in"
+        >
+          <img
+            src="@/assets/images/card-info-mobile-1.png"
+            alt="Oferta del día Jijuna"
+            class="md:hidden w-full card-image-1"
+          />
+          <img
+            src="@/assets/images/salchipapa-card.png"
+            alt="Oferta del día Jijuna"
+            class="w-full hidden md:block"
+          />
         </div>
       </article>
 
@@ -43,11 +70,18 @@
         <div
           class="card-header w-1/2 md:w-full bg-jijuna-black flex flex-col justify-center"
         >
-          <span class="card-subtitle text-jijuna-primary uppercase mb-2 md:mb-5"
+          <span
+            class="card-subtitle text-jijuna-primary uppercase mb-2 md:mb-5"
+            data-aos="fade-in"
+            data-aos-delay="200"
             >Horario</span
           >
 
-          <div class="hourly text-center text-white px-3 md:px-0">
+          <div
+            class="hourly text-center text-white px-3 md:px-0"
+            data-aos="fade-in"
+            data-aos-delay="300"
+          >
             <p>
               De lunes a jueves <br />
               <span class="font-bold">5pm a 12am</span>
@@ -59,15 +93,30 @@
             </p>
           </div>
 
-          <nuxt-link
-            to="/"
+          <a
+            href=""
             class="card-subtitle inline-block text-jijuna-primary underline mt-2 md:mt-4"
-            >Ir a zona de reparto</nuxt-link
+            @click.prevent="toFooter()"
+            data-aos="fade-in"
+            data-aos-delay="400"
+            >Ir a zona de reparto</a
           >
         </div>
 
-        <div class="card-image w-1/2 md:w-full">
-          <img src="@/assets/images/delivery.png" alt="" class="w-full" />
+        <div
+          class="card-image w-1/2 md:w-full"
+          data-aos="fade-in"
+        >
+          <img
+            src="@/assets/images/card-info-mobile-2.png"
+            alt="Oferta del día Jijuna"
+            class="md:hidden w-full card-image-1"
+          />
+          <img
+            src="@/assets/images/delivery.png"
+            alt=""
+            class="w-full hidden md:block"
+          />
         </div>
       </article>
     </div>
@@ -75,7 +124,18 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    toFooter() {
+      const myEl = document.getElementById("footer");
+
+      this.$smoothScroll({
+        scrollTo: myEl,
+        updateHistory: false,
+      });
+    },
+  },
+};
 </script>
 
 <style lang="postcss">
@@ -109,7 +169,7 @@ export default {};
 .card-title-first {
   font-size: 21px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     font-size: 35px;
   }
 }
@@ -118,7 +178,7 @@ export default {};
   font-size: 21px;
   line-height: 25px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     font-size: 42px;
     line-height: 50px;
   }
@@ -129,6 +189,11 @@ export default {};
   line-height: 40px;
 
   @media (min-width: 768px) {
+    font-size: 45px;
+    line-height: 55px;
+  }
+
+  @media (min-width: 1024px) {
     font-size: 65px;
     line-height: 80px;
   }
@@ -150,5 +215,9 @@ export default {};
   @media (min-width: 768px) {
     font-size: 22px;
   }
+}
+
+.card-image-1 {
+  height: 200px;
 }
 </style>

@@ -1,25 +1,34 @@
 <template>
   <section class="app-banner main-bg flex">
     <div
-      class="container app-banner-container mx-auto h-full flex flex-col md:flex-row pt-6 pb-0"
+      class="container app-banner-container mx-auto h-full flex flex-col lg:flex-row pt-10 pb-0"
     >
-      <div class="flex flex-col justify-center">
-        <h1 class="title text-white font-medium">
-          Prueba nuestra salchipapas: Disfrutala en cada bocado crujiente.
+      <div class="flex flex-col" v-if="!loading">
+        <h1 class="title text-white font-medium animate__animated animate__fadeIn">
+          Prueba nuestra
+          <span class="first-span md:block">salchipapas: Disfrútala</span>
+          <span class="md:block">en cada bocado crujiente.</span>
         </h1>
-        <nuxt-link
-          to="/"
-          class="menu-link text-jijuna-primary font-medium underline mt-8 md:mt-2 self-start"
-          >Ver carta</nuxt-link
+        <a
+          href=""
+          class="menu-link text-jijuna-primary font-medium underline mt-8 self-start"
+          @click.prevent="toMenu()"
+          >Ver carta</a
         >
       </div>
 
-      <div class="h-full flex items-end">
-        <img src="@/assets/images/salchipapa-banner.png" alt="Salchipapas Jijuna" />
+      <div class="images-container w-full h-full flex items-end relative animate__animated animate__zoomIn" v-if="!loading">
+        <img
+          src="@/assets/images/banner-image-mobile.svg"
+          alt="Salchipapas Jijuna"
+          class="banner-image md:hidden absolute right-0 -left-6"
+        />
 
-        <nuxt-link to="/" class="banner-button inline-block md:right-16 md:bottom-4 hover:scale-105 transition-all">
-          <img src="@/assets/images/banner-button.png" alt="Salchipapas Jijuna" />
-        </nuxt-link>
+        <img
+          src="@/assets/images/banner-image-desktop.svg"
+          alt="Salchipapas Jijuna"
+          class="banner-image hidden md:block lg:absolute right-0"
+        />
       </div>
     </div>
   </section>
@@ -28,17 +37,51 @@
 <script>
 export default {
   name: "AppBanner",
+  data() {
+    return {
+      loading: true
+    }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.loading = false
+    }, 350);
+  },
+  methods: {
+    toMenu() {
+      const myEl = document.getElementById("menu");
+
+      this.$smoothScroll({
+        scrollTo: myEl,
+        updateHistory: false,
+      });
+    },
+  },
 };
 </script>
 
 <style lang="postcss" scoped>
 .app-banner {
   height: 514px;
+  @apply md:h-auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .app-banner {
     height: 461px;
+  }
+}
+
+.banner-image {
+  max-width: 100vw;
+
+  @media (min-width: 768px) {
+    max-width: 100%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 848px;
+    max-width: initial;
   }
 }
 
@@ -46,6 +89,10 @@ export default {
   font-size: 32px;
   font-weight: bold;
   line-height: 40px;
+
+  @media (max-width: 420px) {
+    width: 351px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -68,5 +115,9 @@ export default {
 
 .banner-button {
   width: 262px;
+}
+
+.images-container {
+  min-height: 300px;
 }
 </style>
