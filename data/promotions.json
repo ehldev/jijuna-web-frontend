@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Salchipapa para dos a S/27.00",
+    "description": "2 Hamburguesas clásicas con una porción de papas fritas y bebidas de papas fritas y bebidas",
+    "image": "salchipapa-card.png",
+    "label": "Todos los días"
+  },
+  {
+    "id": 2,
+    "title": "Salchipapa para tres a S/50.00",
+    "description": "2 Hamburguesas clásicas con una porción de papas fritas y bebidas de papas fritas y bebidas",
+    "image": "salchipapa-card.png",
+    "label": "Todos los lunes"
+  },
+  {
+    "id": 3,
+    "title": "Combo 1 a S/27.00",
+    "description": "2 Hamburguesas clásicas con una porción de papas fritas y bebidas de papas fritas y bebidas",
+    "image": "salchipapa-card.png",
+    "label": "Todos los días"
+  },
+  {
+    "id": 4,
+    "title": "Combo 2 a S/100.00",
+    "description": "2 Hamburguesas clásicas con una porción de papas fritas y bebidas de papas fritas y bebidas",
+    "image": "salchipapa-card.png",
+    "label": "Todos los días"
+  },
+  {
+    "id": 5,
+    "title": "Combo 3 a S/27.00",
+    "description": "2 Hamburguesas clásicas con una porción de papas fritas y bebidas de papas fritas y bebidas",
+    "image": "salchipapa-card.png",
+    "label": "Todos los días"
+  },
+  {
+    "id": 6,
+    "title": "Combo 1 a S/27.00",
+    "description": "2 Hamburguesas clásicas con una porción de papas fritas y bebidas de papas fritas y bebidas",
+    "image": "salchipapa-card.png",
+    "label": "Todos los días"
+  }
+]

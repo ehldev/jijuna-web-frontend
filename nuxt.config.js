@@ -16,14 +16,15 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css', crossorigin: "anonymous", referrerpolicy: "no-referrer" }
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css', crossorigin: "anonymous", referrerpolicy: "no-referrer" },
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' }
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '~/assets/styles/main.css',
-    '~/assets/styles/fonts.css'
+    '~/assets/styles/fonts.css',
+    '~/assets/styles/main.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -34,6 +35,14 @@ export default {
     {
       src: "@/plugins/swiper.js",
       mode: "client",
+    },
+    {
+      src: '@/plugins/vue-smooth-scroll.js',
+      mode: 'client'
+    },
+    {
+      src: '@/plugins/aos.js',
+      mode: 'client'
     }
   ],
 

@@ -1,0 +1,3 @@
+Bajar tamaño de iconos de menu en mobile
+Términos y condiciones igual que el mercadon
+Boton de pedir ahora con position fixed

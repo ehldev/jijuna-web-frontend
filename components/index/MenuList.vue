@@ -1,13 +1,14 @@
 <template>
-  <section class="menu-list bg-jijuna-black mt-10 pt-8 pb-16">
+  <section id="menu" class="menu-list bg-jijuna-black mt-10 pt-8 pb-16">
     <div class="container mx-auto">
-      <h2 class="text-center text-white mb-10">Carta</h2>
+      <h2 class="text-center text-white mb-10" data-aos="fade-in">Carta</h2>
 
-      <section class="md:max-w-6xl mx-auto md:grid md:grid-cols-5 md:gap-4">
-        <div class="md:flex-grow" v-for="item in menu" :key="item.name">
+      <!-- md:max-w-6xl -->
+      <section class="md:max-w-2xl mx-auto md:grid md:grid-cols-3 md:gap-4">
+        <div class="flex justify-center" v-for="item in menu" :key="item.name" data-aos="zoom-in">
           <button
             type="button"
-            class="md:inline-block option-button text-white md:text-center flex justify-between items-center transition-all w-full px-4 mt-6 md:mt-0 h-10 uppercase font-normal"
+            class="md:inline-block option-button text-white md:text-center flex justify-between items-center transition-all w-full md:w-56 px-4 mt-6 md:mt-0 h-10 uppercase font-normal"
             :class="
               item.selected
                 ? 'bg-jijuna-primary'
@@ -38,7 +39,16 @@
               <div class="flex justify-between items-center">
                 <h3 class="text-lg font-medium">{{ o.name }}</h3>
 
-                <span v-decimal:pen="o.price"></span>
+                <div class="flex items-center">
+                  <span v-decimal:pen="o.price"></span>
+                  <button type="button" class="ml-3">
+                    <img
+                      src="@/assets/images/icons/plus.svg"
+                      alt="Agregar producto"
+                      class="w-6 h-6"
+                    />
+                  </button>
+                </div>
               </div>
 
               <p class="font-light mt-3">
@@ -49,16 +59,29 @@
         </div>
       </section>
 
-      <div class="hidden md:grid md:grid-cols-2 md:gap-x-12 md:gap-y-8 max-w-6xl mt-12 mx-auto" v-if="selected">
+      <div
+        class="hidden md:grid md:grid-cols-2 md:gap-x-12 md:gap-y-8 max-w-6xl mt-12 mx-auto"
+        v-if="selected"
+      >
         <div
           class="text-white pb-4 border-b border-b-jijuna-primary"
           v-for="o in selected.items"
           :key="o.name"
+          data-aos="fade-in"
         >
           <div class="flex justify-between items-center">
             <h3 class="text-lg font-medium">{{ o.name }}</h3>
 
-            <span v-decimal:pen="o.price"></span>
+            <div class="flex items-center">
+              <span v-decimal:pen="o.price"></span>
+              <button type="button" class="ml-3">
+                <img
+                  src="@/assets/images/icons/plus.svg"
+                  alt="Agregar producto"
+                  class="w-6 h-6"
+                />
+              </button>
+            </div>
           </div>
 
           <p class="font-light mt-3">
@@ -82,7 +105,7 @@ export default {
     };
   },
   mounted() {
-    this.selected = this.menu.find(item => item.selected)
+    this.selected = this.menu.find((item) => item.selected);
   },
   methods: {
     selectParent(item) {
