@@ -5,7 +5,7 @@
       class="flex p-6"
       :class="type == 'primary' ? 'card-primary' : 'card-black'"
     >
-      <div class="md:pr-8">
+      <div class="md:pr-4 lg:pr-8">
         <span
           class="text-xs"
           :class="
@@ -14,7 +14,7 @@
           >OFERTA ESPECIAL</span
         >
         <h3
-          class="text-lg md:text-2xl font-bold"
+          class="text-lg lg:text-2xl font-bold"
           :class="type == 'black' ? 'text-jijuna-primary' : 'text-jijuna-black'"
         >
           {{ data.title }}

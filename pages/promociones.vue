@@ -3,7 +3,7 @@
     <PromotionBanner title="Promociones Jijuna" subtitle="Para ti o para toda la familia..." />
 
     <!-- Mobile -->
-    <section class="container mx-auto md:hidden mt-6">
+    <section class="page-container mx-auto md:hidden mt-6">
       <div class="mb-4" v-for="(item, index) in promotions" :key="item.id">
         <PromotionCard
           :data="item"
@@ -13,7 +13,7 @@
     </section>
 
     <!-- Desktop -->
-    <section class="xl:max-w-6xl mx-auto hidden md:block mt-12">
+    <section class="page-container mx-auto hidden md:block mt-12">
       <!-- Row 1 -->
       <div class="grid grid-cols-2 gap-4">
         <div>

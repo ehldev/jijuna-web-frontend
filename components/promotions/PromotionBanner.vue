@@ -1,7 +1,7 @@
 <template>
   <section class="promotion-banner main-bg">
     <div
-      class="xl:max-w-6xl mx-auto promotion-banner grid grid-cols-2 pr-0"
+      class="page-container mx-auto promotion-banner grid grid-cols-2 pr-0"
     >
       <div class="h-full flex flex-col justify-center pr-2 md:pr-0" data-aos="fade-in">
         <h1 class="title text-white font-bold" v-if="title">{{ title }}</h1>
@@ -45,13 +45,8 @@ export default {
 }
 
 .title {
-  @apply text-2xl;
-  line-height: 28px;
-
-  @media (min-width: 400px) {
-    font-size: 28px;
-    line-height: 32px;
-  }
+  font-size: 28px;
+  line-height: 32px;
 
   @media (min-width: 768px) {
     font-size: 42px;
@@ -85,7 +80,7 @@ export default {
 
   @media (min-width: 768px) {
     width: 767px;
-    @apply max-w-none;
+    max-width: 117.6%;
     height: 190px;
   }
 
@@ -93,3 +88,4 @@ export default {
     @apply max-w-full;
   }
 }
+</style>

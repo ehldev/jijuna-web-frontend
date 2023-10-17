@@ -2,7 +2,7 @@
   <main class="terms pb-12">
     <PromotionBanner title="Términos y condiciones" />
 
-    <article class="container mt-6 mx-auto">
+    <article class="container mt-8 mx-auto">
       <p>
         Te damos la bienvenida a <span class="font-bold"></span> y a su página
         web <nuxt-link to="/">www.jijuna.pe</nuxt-link>
