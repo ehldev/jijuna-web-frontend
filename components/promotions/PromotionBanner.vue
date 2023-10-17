@@ -81,6 +81,7 @@ export default {
 .banner-image {
   @apply w-full;
   height: 203px;
+<<<<<<< HEAD
   @apply min-w-full;
 
   @media (min-width: 768px) {
@@ -92,5 +93,13 @@ export default {
   @media (min-width: 1536px) {
     @apply max-w-full;
   }
+=======
+  max-width: 100%;
+
+  @media (min-width: 768px) {
+    width: 767px;
+    height: 190px;
+  }
+>>>>>>> ea664dc0bf8d7e3c691fdb3b973a3478bc080f72
 }
 </style>

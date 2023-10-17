@@ -78,4 +78,7 @@ export default {
 </script>
 
 <style lang="postcss">
+.app-gallery-container {
+  max-width: 1440px;
+}
 </style>
