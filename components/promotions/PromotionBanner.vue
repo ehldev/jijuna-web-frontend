@@ -93,4 +93,3 @@ export default {
     @apply max-w-full;
   }
 }
-</style>
