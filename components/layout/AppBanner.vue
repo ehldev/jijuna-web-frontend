@@ -1,9 +1,9 @@
 <template>
   <section class="app-banner main-bg flex">
     <div
-      class="page-container md:w-full app-banner-container mx-auto h-full flex flex-col lg:flex-row pt-10 pb-0 relative"
+      class="page-container md:w-full app-banner-container mx-auto h-full flex flex-col md:flex-row lg:flex-row pt-4 md:pt-0 pb-0 relative"
     >
-      <div class="flex flex-col" v-if="!loading">
+      <div class="flex flex-col justify-center" v-if="!loading">
         <h1 class="title text-white font-medium animate__animated animate__fadeIn">
           Prueba nuestra
           <span class="first-span md:block">salchipapas: Disfrútala</span>
@@ -11,7 +11,7 @@
         </h1>
         <a
           href=""
-          class="menu-link text-jijuna-primary font-medium underline mt-8 self-start"
+          class="menu-link text-jijuna-primary font-bold underline mt-8 self-start"
           @click.prevent="toMenu()"
           >Ver carta</a
         >
@@ -83,6 +83,7 @@ export default {
   @media (min-width: 1024px) {
     width: 848px;
     max-width: initial;
+    bottom: -5px;
   }
 }
 
@@ -97,6 +98,12 @@ export default {
 }
 
 @media (min-width: 768px) {
+  .title {
+    width: 300px;
+  }
+}
+
+@media (min-width: 992px) {
   .title {
     width: 640px;
     font-size: 42px;

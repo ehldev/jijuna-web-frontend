@@ -10,8 +10,10 @@
 
           <p class="mt-4">
             ¡Tu antojo de comida rápida satisfecho en un click! Bienvenido a
-            <span class="font-bold">JIJUNA</span>, el rincón donde las <span class="font-bold">Salchipapas, Hamburguesas, Alitas</span> y el
-            <span class="font-bold">Broaster</span> se convierten en protagonistas de tu paladar.
+            <span class="font-bold">JIJUNA</span>, el rincón donde las
+            <span class="font-bold">Salchipapas, Hamburguesas, Alitas</span> y
+            el <span class="font-bold">Broaster</span> se convierten en
+            protagonistas de tu paladar.
           </p>
 
           <p class="mt-3">
@@ -48,7 +50,7 @@
               <nuxt-link
                 to="/terminos-y-condiciones"
                 target="_blank"
-                class="text-white hover:text-jijuna-primary text-base"
+                class="text-white font-bold hover:text-jijuna-primary text-base"
                 >Términos y condiciones</nuxt-link
               >
             </li>
@@ -93,6 +95,19 @@
               {{ item }}
             </li>
           </ul>
+
+          <div class="mt-4">
+            <h4 class="text-white text-lg">Métodos de pago</h4>
+
+            <div class="flex mt-3">
+              <img
+                src="@/assets/images/footer/yape.svg"
+                alt="Yape Jijuna"
+                class="mr-3"
+              />
+              <img src="@/assets/images/footer/plin.svg" alt="Plin Jijuna" />
+            </div>
+          </div>
         </section>
 
         <section data-aos="fade-in">
@@ -108,7 +123,7 @@
                 />
                 <a
                   href="mailto:ventas@jijuna.pe"
-                  class="text-white hover:text-jijuna-primary text-base"
+                  class="text-white font-bold hover:text-jijuna-primary text-base"
                   >ventas@jijuna.pe</a
                 >
               </li>
@@ -121,7 +136,7 @@
                 />
                 <a
                   href="tel:+51934325715"
-                  class="text-white hover:text-jijuna-primary text-base"
+                  class="text-white font-bold hover:text-jijuna-primary text-base"
                   >934 325 715</a
                 >
               </li>
@@ -135,7 +150,7 @@
                 <a
                   href="https://api.whatsapp.com/send?phone=51934325715"
                   target="_blank"
-                  class="text-white hover:text-jijuna-primary text-base"
+                  class="text-white font-bold hover:text-jijuna-primary text-base"
                   >934 325 715</a
                 >
               </li>
@@ -148,22 +163,9 @@
             </div>
 
             <div class="text-jijuna-primary text-sm mt-4">
-              <span>DATOS DE LA EMPRESA</span>
+              <span class="font-bold">DATOS DE LA EMPRESA</span>
               <p>R.U.C. : 20610932208</p>
               <p>Razón Social : ALENDIL S.A.C.</p>
-            </div>
-
-            <div class="mt-4">
-              <h4 class="text-white text-lg">Métodos de pago</h4>
-
-              <div class="flex mt-3">
-                <img
-                  src="@/assets/images/footer/yape.svg"
-                  alt="Yape Jijuna"
-                  class="mr-3"
-                />
-                <img src="@/assets/images/footer/plin.svg" alt="Plin Jijuna" />
-              </div>
             </div>
 
             <div class="mt-4">
@@ -174,14 +176,13 @@
                   <img
                     src="@/assets/images/footer/facebook.svg"
                     alt="Facebook Jijuna"
-                    class="mr-3"
                   />
                 </a>
                 <a href="https://www.instagram.com/jijuna.pe/" target="_blank">
                   <img
                     src="@/assets/images/footer/instagram.svg"
                     alt="Plin Jijuna"
-                    class="mr-3"
+                    class="mx-8"
                   />
                 </a>
                 <a href="https://www.tiktok.com/@jijuna.pe" target="_blank">
