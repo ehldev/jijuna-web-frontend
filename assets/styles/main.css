@@ -15,6 +15,15 @@ h1, h2, h3, h4, h5 {
   background-image: url('@/assets/images/fondo-banner.png');
 }
 
+.page-container {
+  max-width: 85%;
+  @apply mx-auto;
+
+  @media (min-width: 1536px) {
+    max-width: 1440px;
+  }
+}
+
 .page-subtitle {
   font-size: 42px;
 

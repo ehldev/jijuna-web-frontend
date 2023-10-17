@@ -1,11 +1,11 @@
 <template>
   <section id="menu" class="menu-list bg-jijuna-black mt-10 pt-8 pb-16">
-    <div class="container mx-auto">
+    <div class="page-container mx-auto">
       <h2 class="text-center text-white mb-10" data-aos="fade-in">Carta</h2>
 
       <!-- md:max-w-6xl -->
       <section class="md:max-w-2xl mx-auto md:grid md:grid-cols-3 md:gap-4">
-        <div class="flex justify-center" v-for="item in menu" :key="item.name" data-aos="zoom-in">
+        <div v-for="item in menu" :key="item.name" data-aos="zoom-in">
           <button
             type="button"
             class="md:inline-block option-button text-white md:text-center flex justify-between items-center transition-all w-full md:w-56 px-4 mt-6 md:mt-0 h-10 uppercase font-normal"
@@ -60,7 +60,7 @@
       </section>
 
       <div
-        class="hidden md:grid md:grid-cols-2 md:gap-x-12 md:gap-y-8 max-w-6xl mt-12 mx-auto"
+        class="hidden md:grid md:grid-cols-2 md:gap-x-12 md:gap-y-8 mt-12 mx-auto"
         v-if="selected"
       >
         <div

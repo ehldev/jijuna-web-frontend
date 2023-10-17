@@ -3,7 +3,7 @@
     class="bg-jijuna-black h-20 relative z-50"
     :class="isActive ? 'fixed w-full' : 'relative'"
   >
-    <div class="xl:max-w-6xl mx-auto flex justify-between items-center h-full">
+    <div class="page-container mx-auto flex justify-between items-center h-full">
       <figure @click="$router.push('/')" class="cursor-pointer">
         <img src="@/assets/images/logo-jijuna.svg" alt="Logo Jijuna" />
       </figure>

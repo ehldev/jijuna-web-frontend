@@ -6,7 +6,7 @@
 
     <AppFooter />
 
-    <button type="button" class="fixed right-24 bottom-10" data-aos="fade-left" v-if="!loading">
+    <button type="button" class="fixed right-2 md:right-24 bottom-10" data-aos="fade-left" v-if="!loading">
       <img src="@/assets/images/contacto.svg" alt="Pedir ahora en Jijuna" class="contact hover:scale-105 transition-all">
     </button>
   </div>

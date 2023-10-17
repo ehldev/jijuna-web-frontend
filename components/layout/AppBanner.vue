@@ -1,7 +1,7 @@
 <template>
   <section class="app-banner main-bg flex">
     <div
-      class="xl:max-w-6xl w-full app-banner-container mx-auto h-full flex flex-col lg:flex-row pt-10 pb-0"
+      class="page-container md:w-full app-banner-container mx-auto h-full flex flex-col lg:flex-row pt-10 pb-0 relative"
     >
       <div class="flex flex-col" v-if="!loading">
         <h1 class="title text-white font-medium animate__animated animate__fadeIn">
@@ -17,11 +17,11 @@
         >
       </div>
 
-      <div class="images-container w-full h-full flex items-end relative animate__animated animate__zoomIn" v-if="!loading">
+      <div class="images-container w-full h-full flex items-end animate__animated animate__zoomIn" v-if="!loading">
         <img
           src="@/assets/images/banner-image-mobile.svg"
           alt="Salchipapas Jijuna"
-          class="banner-image md:hidden absolute right-0 -left-6"
+          class="banner-image md:hidden absolute right-0 -left-8"
         />
 
         <img
@@ -73,6 +73,7 @@ export default {
 }
 
 .banner-image {
+  width: 420px;
   max-width: 100vw;
 
   @media (min-width: 768px) {
@@ -118,6 +119,8 @@ export default {
 }
 
 .images-container {
-  min-height: 300px;
+  @media (min-width: 768px) {
+    min-height: 300px;
+  }
 }
 </style>

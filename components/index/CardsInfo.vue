@@ -1,6 +1,6 @@
 <template>
   <section class="mt-10">
-    <div class="xl:max-w-6xl mx-auto md:grid md:grid-cols-2 gap-8">
+    <div class="page-container mx-auto md:grid md:grid-cols-2 gap-8">
       <!-- Card 1 -->
       <article class="card w-full flex md:flex-col mx-auto md:mx-0 md:ml-auto">
         <div
@@ -14,7 +14,7 @@
 
           <div class="flex flex-col md:flex-row justify-center items-center">
             <div
-              class="text-right border-b md:border-b-0 md:border-r border-jijuna-black md:pr-6 pb-2"
+              class="text-right border-b md:border-b-0 md:border-r border-jijuna-black md:pr-4 lg:pr-6 pb-2"
               data-aos="fade-in"
 
             >
@@ -32,7 +32,7 @@
               data-aos-delay="200"
             >
               <h3 class="discount-value font-bold">25</h3>
-              <h3 class="card-title discount flex flex-col font-bold pl-1">
+              <h3 class="card-title discount flex flex-col justify-center font-bold pl-1 pb-1">
                 % <span class="discount font-normal">Dscto.</span>
               </h3>
             </div>
@@ -160,7 +160,7 @@ export default {
   font-size: 25px;
   line-height: 30px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     font-size: 42px;
     line-height: 42px;
   }

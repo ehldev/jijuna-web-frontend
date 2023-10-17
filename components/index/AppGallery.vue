@@ -1,6 +1,6 @@
 <template>
   <section class="app-gallery mx-auto mt-10 pb-12">
-    <div class="2xl:max-w-6xl app-gallery-container mx-auto px-0">
+    <div class="app-gallery-container mx-auto px-0">
       <h2 class="page-subtitle text-center mb-6 md:mb-0">Galería</h2>
 
       <CoolLightBox :items="images" :index="index" @close="index = null">
@@ -79,6 +79,8 @@ export default {
 
 <style lang="postcss">
 .app-gallery-container {
-  max-width: 1440px;
+  @media (min-width: 1536px) {
+    max-width: 1440px;
+  }
 }
 </style>

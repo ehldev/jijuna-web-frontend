@@ -1,6 +1,6 @@
 <template>
   <footer id="footer" class="main-bg">
-    <div class="xl:max-w-6xl mx-auto py-6 lg:flex">
+    <div class="page-container mx-auto py-6 lg:flex">
       <section class="info-container lg:w-2/5">
         <div
           class="text-white text-xs md:text-sm font-light"
@@ -198,7 +198,7 @@
     </div>
 
     <section class="bg-jijuna-black text-center text-white p-4">
-      <div class="xl:max-w-6xl mx-auto md:flex md:justify-between">
+      <div class="page-container mx-auto md:flex md:justify-between">
         <p class="text-sm">JIJUNA © Todos los derechos reservados {{ year }}</p>
         <p class="mt-1">
           Forjado por
