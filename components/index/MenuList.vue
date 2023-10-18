@@ -1,7 +1,7 @@
 <template>
   <section id="menu" class="menu-list bg-jijuna-black mt-10 pt-8 pb-16">
     <div class="page-container mx-auto">
-      <h2 class="text-center text-white mb-10" data-aos="fade-in">Carta</h2>
+      <h2 class="page-subtitle text-center text-white mb-10" data-aos="fade-in">Carta</h2>
 
       <!-- md:max-w-6xl -->
       <section class="mx-auto md:flex justify-center">

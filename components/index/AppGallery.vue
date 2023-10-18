@@ -46,11 +46,11 @@ export default {
   data() {
     return {
       images: [
-        "https://res.cloudinary.com/ehldev/image/upload/v1696486372/fhqbuepwzdxikllmq850.png",
-        "https://res.cloudinary.com/ehldev/image/upload/v1696486372/dlmdeygg8truow9itbku.png",
-        "https://res.cloudinary.com/ehldev/image/upload/v1696486373/yaeb30te2kxmqjgwnerp.png",
-        "https://res.cloudinary.com/ehldev/image/upload/v1696486372/stt9krx7wjvy6g47kszc.png",
-        "https://res.cloudinary.com/ehldev/image/upload/v1696486372/fhqbuepwzdxikllmq850.png"
+        "https://res.cloudinary.com/ehldev/image/upload/v1697586510/jijuna/mujer-pelando-algunas-papas-crudas-cerca_1_ezhztl.png",
+        "https://res.cloudinary.com/ehldev/image/upload/v1697586573/jijuna/buffet-papas-fritas-recien-cortado_1_l6cgcm.png",
+        "https://res.cloudinary.com/ehldev/image/upload/v1697586579/jijuna/mujer-preparando-hamburguesas-papas-fritas_1_msvph6.png",
+        "https://res.cloudinary.com/ehldev/image/upload/v1697586596/jijuna/mujer-cocinando-lechuga_1_hnzzd7.png",
+        "https://res.cloudinary.com/ehldev/image/upload/v1697586612/jijuna/mujer-pelando-algunas-papas-crudas-cerca_1_1_jf07qf.png"
       ],
       index: null,
       swiperOptions: {

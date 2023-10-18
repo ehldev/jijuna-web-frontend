@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'jijuna-web-frontend',
+    title: '▷ JIJUNA ☀️ - Salchipapas, Hamburguesas y otras cositas...',
     htmlAttrs: {
       lang: 'es'
     },
