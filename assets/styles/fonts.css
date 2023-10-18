@@ -23,11 +23,3 @@
   font-weight: 700; /* Peso de la fuente "bold" */
   font-style: normal;
 }
-
-@font-face {
-  font-family: "Inure Black";
-  src: url("~assets/fonts/Inure-Black/inure_black-webfont.woff2")
-      format("woff2"),
-    url("~assets/fonts/Inure-Black/inure_black-webfont.woff") format("woff");
-  font-weight: 900; /* Peso de la fuente "light" */
-}

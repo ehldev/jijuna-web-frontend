@@ -86,7 +86,7 @@
         </div>
       </section>
 
-      <div class="md:flex md:justify-around md:flex-1 md:mt-6">
+      <div class="md:flex md:justify-start md:flex-1 md:mt-6 md:ml-14">
         <section>
           <h3 class="footer-title">Cobertura - Delivery</h3>
 
@@ -110,11 +110,11 @@
           </div>
         </section>
 
-        <section data-aos="fade-in">
+        <section class="md:ml-14" data-aos="fade-in">
           <h3 class="footer-title">Contáctanos</h3>
 
           <div class="mt-4">
-            <ul>
+            <ul class="contact-list">
               <li class="flex">
                 <img
                   src="@/assets/images/footer/email.svg"
@@ -123,7 +123,7 @@
                 />
                 <a
                   href="mailto:ventas@jijuna.pe"
-                  class="text-white font-bold hover:text-jijuna-primary text-base"
+                  class="text-white font-bold hover:text-jijuna-primary text-base lg:text-2xl"
                   >ventas@jijuna.pe</a
                 >
               </li>
@@ -136,7 +136,7 @@
                 />
                 <a
                   href="tel:+51934325715"
-                  class="text-white font-bold hover:text-jijuna-primary text-base"
+                  class="text-white font-bold hover:text-jijuna-primary text-base lg:text-2xl"
                   >934 325 715</a
                 >
               </li>
@@ -150,13 +150,13 @@
                 <a
                   href="https://api.whatsapp.com/send?phone=51934325715"
                   target="_blank"
-                  class="text-white font-bold hover:text-jijuna-primary text-base"
+                  class="text-white font-bold hover:text-jijuna-primary text-base lg:text-2xl"
                   >934 325 715</a
                 >
               </li>
             </ul>
 
-            <div class="text-white text-sm mt-4">
+            <div class="text-white text-sm mt-4 md:mt-8">
               <span>Horarios:</span>
               <p>Lunes a Jueves de 5pm a 12am</p>
               <p>Viernes y Sábados de 5pm a 2am</p>
@@ -168,7 +168,7 @@
               <p>Razón Social : ALENDIL S.A.C.</p>
             </div>
 
-            <div class="mt-4">
+            <div class="mt-4 md:mt-8">
               <h4 class="text-white text-lg">Síguenos</h4>
 
               <div class="flex mt-3">
@@ -253,6 +253,20 @@ export default {
     height: 4px;
     position: absolute;
     bottom: -0.3rem;
+  }
+}
+
+.contact-list {
+  img {
+    width: 20px;
+    height: 20px;
+  }
+
+  @media (min-width: 768px) {
+    img {
+      width: auto;
+      height: auto;
+    }
   }
 }
 </style>

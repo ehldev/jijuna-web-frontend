@@ -1,11 +1,18 @@
 <template>
   <section id="menu" class="menu-list bg-jijuna-black mt-10 pt-8 pb-16">
     <div class="page-container mx-auto">
-      <h2 class="page-subtitle text-center text-white mb-10" data-aos="fade-in">Carta</h2>
+      <h2 class="page-subtitle text-center text-white mb-10" data-aos="fade-in">
+        Carta
+      </h2>
 
       <!-- md:max-w-6xl -->
       <section class="mx-auto md:flex justify-center">
-        <div class="mx-3" v-for="item in menu" :key="item.name" data-aos="zoom-in">
+        <div
+          class="mx-3"
+          v-for="(item, i) in menu"
+          :key="item.name"
+          :id="`option-${i + 1}`"
+        >
           <button
             type="button"
             class="md:inline-block option-button text-white md:text-center flex justify-between items-center transition-all w-full md:w-56 px-4 mt-6 md:mt-0 h-10 uppercase font-normal"
@@ -14,7 +21,7 @@
                 ? 'bg-jijuna-primary'
                 : 'bg-jijuna-primary-30 hover:bg-jijuna-primary'
             "
-            @click="selectParent(item)"
+            @click="selectParent(item, i)"
           >
             {{ item.name }}
 
@@ -29,7 +36,7 @@
             />
           </button>
 
-          <!-- Mobile -->
+          <!-- Items mobile -->
           <section class="md:hidden" v-if="item.selected">
             <div
               class="text-white mt-10 pb-4 border-b border-b-jijuna-primary"
@@ -41,7 +48,7 @@
 
                 <div class="flex items-center">
                   <span v-decimal:pen="o.price"></span>
-                  <button type="button" class="ml-3">
+                  <button type="button" class="ml-3" @click="redirect()">
                     <img
                       src="@/assets/images/icons/plus.svg"
                       alt="Agregar producto"
@@ -59,6 +66,7 @@
         </div>
       </section>
 
+      <!-- Items desktop -->
       <div
         class="hidden md:grid md:grid-cols-2 md:gap-x-12 md:gap-y-8 mt-12 mx-auto"
         v-if="selected"
@@ -74,7 +82,7 @@
 
             <div class="flex items-center">
               <span v-decimal:pen="o.price"></span>
-              <button type="button" class="ml-3">
+              <button type="button" class="ml-3" @click="redirect()">
                 <img
                   src="@/assets/images/icons/plus.svg"
                   alt="Agregar producto"
@@ -108,14 +116,26 @@ export default {
     this.selected = this.menu.find((item) => item.selected);
   },
   methods: {
-    selectParent(item) {
+    selectParent(item, i) {
       this.selected = item;
 
       let otherItems = this.menu.filter((o) => o.name != item.name);
       otherItems.forEach((o) => (o.selected = false));
 
       item.selected = !item.selected;
+
+      setTimeout(() => {
+        const option = document.getElementById(`option-${parseInt(i) + 1}`);
+        this.$smoothScroll({
+          scrollTo: option,
+          updateHistory: false,
+          offset: -25
+        });
+      }, 350);
     },
+    redirect() {
+      window.open('https://www.rappi.com.pe/restaurantes/53016-jijuna')
+    }
   },
 };
 </script>

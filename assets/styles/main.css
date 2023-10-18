@@ -25,14 +25,12 @@ h1, h2, h3, h4, h5 {
 }
 
 .page-subtitle {
-  @apply uppercase;
+  font-family: 'Gotham Bold';
   font-size: 42px;
-  font-family: 'Inure Black' !important;
-  letter-spacing: .5rem;
 
   @media (min-width: 768px) {
-    font-size: 45px;
-    font-family: 'Gotham Bold';
+    font-size: 64px;
+    line-height: 76px;
   }
 }
 

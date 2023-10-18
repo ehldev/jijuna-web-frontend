@@ -1,7 +1,7 @@
 <template>
   <section class="app-gallery mx-auto mt-10 pb-12">
     <div class="app-gallery-container mx-auto px-0">
-      <h2 class="page-subtitle text-center mb-6 md:mb-0">Galería</h2>
+      <h2 class="page-subtitle text-center mb-6">Galería</h2>
 
       <CoolLightBox :items="images" :index="index" @close="index = null">
       </CoolLightBox>
@@ -31,7 +31,7 @@
           data-aos="fade-in"
           :data-aos-delay="100 * (i + 1)"
         >
-          <img :src="image" alt="" />
+          <img :src="image" alt="" class="w-full" />
         </div>
       </div>
     </div>
@@ -79,7 +79,7 @@ export default {
 
 <style lang="postcss">
 .app-gallery-container {
-  @media (min-width: 1536px) {
+  @media (min-width: 2000px) {
     max-width: 1440px;
   }
 }
