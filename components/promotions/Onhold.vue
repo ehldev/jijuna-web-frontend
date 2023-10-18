@@ -150,7 +150,7 @@ export default {
   }
 
   @media (min-width: 1440px) {
-    width: 18vw;
+    width: 17vw;
   }
 
   @media (min-width: 1530px) {
