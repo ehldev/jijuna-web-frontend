@@ -3,17 +3,39 @@
     <section
       class="on-hold main-bg text-center flex flex-col justify-between md:justify-center items-center py-10 relative"
     >
-
       <!-- Mobile -->
-      <img src="@/assets/images/promotions/on-hold/mobile-1.png" alt="Jijuna" class="md:hidden img-mobile-1 absolute left-0">
-      <img src="@/assets/images/promotions/on-hold/mobile-2.png" alt="Jijuna" class="md:hidden img-mobile-2 absolute right-0">
+      <img
+        src="@/assets/images/promotions/on-hold/mobile-1.png"
+        alt="Jijuna"
+        class="md:hidden img-mobile-1 absolute left-0"
+      />
+      <img
+        src="@/assets/images/promotions/on-hold/mobile-2.png"
+        alt="Jijuna"
+        class="md:hidden img-mobile-2 absolute right-0"
+      />
 
       <!-- Desktop -->
-      <img src="@/assets/images/promotions/on-hold/desktop-1.png" alt="Jijuna" class="hidden md:block img-desktop-1 absolute left-0">
-      <img src="@/assets/images/promotions/on-hold/desktop-2.png" alt="Jijuna" class="hidden md:block img-desktop-2 absolute right-0">
-      <img src="@/assets/images/promotions/on-hold/desktop-3.png" alt="Jijuna" class="hidden md:block img-desktop-3 absolute left-0">
-      <img src="@/assets/images/promotions/on-hold/desktop-4.png" alt="Jijuna" class="hidden md:block img-desktop-4 absolute right-0">
-
+      <img
+        src="@/assets/images/promotions/on-hold/desktop-1.png"
+        alt="Jijuna"
+        class="hidden md:block img-desktop-1 absolute left-0"
+      />
+      <img
+        src="@/assets/images/promotions/on-hold/desktop-2.png"
+        alt="Jijuna"
+        class="hidden md:block img-desktop-2 absolute right-0"
+      />
+      <img
+        src="@/assets/images/promotions/on-hold/desktop-3.png"
+        alt="Jijuna"
+        class="hidden md:block img-desktop-3 absolute left-0"
+      />
+      <img
+        src="@/assets/images/promotions/on-hold/desktop-4.png"
+        alt="Jijuna"
+        class="hidden md:block img-desktop-4 absolute right-0"
+      />
 
       <div class="flex flex-col justify-center items-center">
         <h1 class="on-hold-title text-white">
@@ -28,18 +50,19 @@
           >Ver carta</a
         >
 
-        <button type="button" class="inline-block mt-8">
+        <a :href="rappiUrl" target="_blank" class="inline-block mt-8">
           <img
             src="@/assets/images/promotions/button.png"
             alt="Pedir ahora"
             class="button"
           />
-        </button>
+        </a>
       </div>
 
       <section class="text-center mb-10 md:mb-0 md:mt-10 lg:mt-14">
         <p class="text-white text-xl lg:text-2xl font-bold">
-          Te invitamos a seguirnos <br class="md:hidden"> en nuestras redes
+          Te invitamos a seguirnos <br class="md:hidden" />
+          en nuestras redes
         </p>
 
         <div class="social-icons flex justify-center mt-6">
@@ -64,14 +87,23 @@
 export default {
   methods: {
     toMenu() {
-      const myEl = document.getElementById("menu");
+      this.$router.push("/");
 
-      this.$smoothScroll({
-        scrollTo: myEl,
-        updateHistory: false,
-      });
+      setTimeout(() => {
+        const myEl = document.getElementById("menu");
+
+        this.$smoothScroll({
+          scrollTo: myEl,
+          updateHistory: false,
+        });
+      }, 350);
     },
   },
+  computed: {
+    rappiUrl() {
+      return process.env.RAPPI_URL
+    }
+  }
 };
 </script>
 

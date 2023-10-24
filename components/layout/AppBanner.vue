@@ -4,7 +4,9 @@
       class="page-container md:w-full app-banner-container mx-auto h-full flex flex-col md:flex-row lg:flex-row pt-4 md:pt-0 pb-0 relative"
     >
       <div class="flex flex-col justify-center" v-if="!loading">
-        <h1 class="title text-white font-medium animate__animated animate__fadeIn">
+        <h1
+          class="title text-white font-medium animate__animated animate__fadeIn"
+        >
           Prueba nuestra
           <span class="first-span md:block">salchipapas: Disfrútala</span>
           <span class="md:block">en cada bocado crujiente.</span>
@@ -17,17 +19,20 @@
         >
       </div>
 
-      <div class="images-container w-full h-full flex items-end animate__animated animate__zoomIn" v-if="!loading">
-        <img
+      <div
+        class="images-container w-full h-full flex items-end animate__animated animate__zoomIn"
+        v-if="!loading"
+      >
+        <!-- <img
           src="@/assets/images/banner-image-mobile.svg"
           alt="Salchipapas Jijuna"
           class="banner-image md:hidden absolute right-0 -left-8"
-        />
+        /> -->
 
         <img
-          src="@/assets/images/banner-image-desktop.svg"
+          src="@/assets/images/banner-image-desktop.png"
           alt="Salchipapas Jijuna"
-          class="banner-image hidden md:block lg:absolute right-0"
+          class="banner-image md:absolute right-0"
         />
       </div>
     </div>
@@ -39,12 +44,12 @@ export default {
   name: "AppBanner",
   data() {
     return {
-      loading: true
-    }
+      loading: true,
+    };
   },
   mounted() {
     setTimeout(() => {
-      this.loading = false
+      this.loading = false;
     }, 350);
   },
   methods: {
@@ -73,17 +78,18 @@ export default {
 }
 
 .banner-image {
-  width: 420px;
-  max-width: 100vw;
+  max-width: 100%;
 
   @media (min-width: 768px) {
-    max-width: 100%;
+    max-width: 90%;
+    height: 180px;
   }
 
   @media (min-width: 1024px) {
-    width: 848px;
-    max-width: initial;
-    bottom: -5px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    bottom: 10px;
   }
 }
 
@@ -95,19 +101,23 @@ export default {
   @media (max-width: 420px) {
     width: 351px;
   }
-}
 
-@media (min-width: 768px) {
-  .title {
-    width: 300px;
+  @media (min-width: 768px) {
+    width: 430px;
   }
-}
 
-@media (min-width: 992px) {
-  .title {
-    width: 640px;
+  @media (min-width: 992px) {
+    width: 540px;
     font-size: 42px;
     line-height: 50px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 600px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 640px;
   }
 }
 

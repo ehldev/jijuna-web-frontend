@@ -28,6 +28,10 @@ export default {
     '~/assets/styles/main.css'
   ],
 
+  env: {
+    RAPPI_URL: 'https://www.rappi.com.pe/restaurantes/53016-jijuna'
+  },
+
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     {

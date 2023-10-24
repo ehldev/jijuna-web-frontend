@@ -51,7 +51,7 @@
           data-aos="fade-in"
         >
           <img
-            src="@/assets/images/card-info-mobile-1.png"
+            src="@/assets/images/salchipapa-card.png"
             alt="Oferta del día Jijuna"
             class="md:hidden w-full card-image-1"
           />

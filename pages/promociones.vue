@@ -105,6 +105,7 @@ export default {
     return {
       promotions,
       showInfo: false,
+      year: new Date().getFullYear()
     };
   },
   components: {

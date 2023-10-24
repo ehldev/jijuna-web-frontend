@@ -6,7 +6,7 @@
 
     <AppFooter v-if="$route.name != 'promociones'" />
 
-    <a href="https://www.rappi.com.pe/restaurantes/53016-jijuna" target="_blank" class="fixed right-2 md:right-24 bottom-10" data-aos="fade-left" v-if="!loading && $route.name != 'promociones'">
+    <a :href="rappiUrl" target="_blank" class="fixed right-2 md:right-4 bottom-10" data-aos="fade-left" v-if="!loading && $route.name != 'promociones'">
       <img src="@/assets/images/contacto.svg" alt="Pedir ahora en Jijuna" class="contact hover:scale-105 transition-all">
     </a>
   </div>
@@ -30,6 +30,11 @@ export default {
   components: {
     AppHeader,
     AppFooter
+  },
+  computed: {
+    rappiUrl() {
+      return process.env.RAPPI_URL
+    }
   }
 }
 </script>
